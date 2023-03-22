@@ -17,8 +17,9 @@ class TicketController extends Controller
 
     public function store(Request $request){
         $request->validate([
-            ''
-
+            'titulo'=> 'required',
+            'descripcion'=> 'required',
+            'nombre_persona'=> 'required',
         ]);
 
         Ticket::create($request->post());
@@ -36,7 +37,9 @@ class TicketController extends Controller
 
     public function update(Request $request, Ticket $ticket){
         $request->validate([
-
+            'titulo'=> 'required',
+            'descripcion'=> 'required',
+            'nombre_persona'=> 'required',
         ]);
 
         $ticket->fill($request->post())->save();

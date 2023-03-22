@@ -7,21 +7,6 @@
 </head>
 <body>
 <div class="container mt-2">
-    <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-left">
-                <h2>Practica 4</h2>
-            </div>
-            <div class="pull-right mb-2">
-                <a class="btn btn-success" href="{{ route('tickets.create') }}"> Create Ticket</a>
-            </div>
-        </div>
-    </div>
-    @if ($message = Session::get('success'))
-        <div class="alert alert-success">
-            <p>{{ $message }}</p>
-        </div>
-    @endif
     <table class="table table-bordered">
         <thead>
         <tr>

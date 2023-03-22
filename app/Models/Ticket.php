@@ -11,4 +11,5 @@ class Ticket extends Model
 
     protected $fillable = ['titulo', 'descripcion', 'foto', 'nombre_persona', 'prioridad'];
 
+
 }

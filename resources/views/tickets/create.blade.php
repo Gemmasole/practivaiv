@@ -48,8 +48,17 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Nombre Perdona que lo crea:</strong>
-                    <input type="text" name="person" class="form-control" placeholder="Persona crea">
+                    <input type="text" name="nombre_persona" class="form-control" placeholder="Persona crea">
                     @error('person')
+                    <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
+                    @enderror
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-12 col-md-12">
+                <div class="form-group">
+                    <strong>Foto:</strong>
+                    <input type="text" name="foto" class="form-control" placeholder="Foto">
+                    @error('foto')
                     <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror
                 </div>
