@@ -39,7 +39,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Descripcion ticket:</strong>
-                    <input type="email" name="descripcion" class="form-control" placeholder="Descripcion ticket">
+                    <input type="text" name="descripcion" class="form-control" placeholder="Descripcion ticket">
                     @error('descripcion')
                     <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror

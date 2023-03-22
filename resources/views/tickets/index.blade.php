@@ -25,10 +25,10 @@
     <table class="table table-bordered">
         <thead>
         <tr>
-            <th>S.No</th>
-            <th>Company Name</th>
-            <th>Company Email</th>
-            <th>Company Address</th>
+            <th>Id</th>
+            <th>Titulo Ticket</th>
+            <th>Nombre Persona</th>
+            <th>Creado</th>
             <th width="280px">Action</th>
         </tr>
         </thead>
