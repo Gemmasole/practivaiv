@@ -20,8 +20,10 @@ class CreateTicketsTable extends Migration
             $table->string('foto');
             $table->string('nombre_persona');
             $table->enum('prioridad',["alta", "media", "baja"]);
+            $table->string('slug', 100)->nullable()->unique();
             $table->timestamps();
         });
+
     }
 
     /**

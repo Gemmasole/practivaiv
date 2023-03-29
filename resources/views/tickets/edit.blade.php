@@ -1,22 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('tickets.layout')
 
-<head>
-    <meta charset="UTF-8">
-    <title>Edit Ticket Form</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-</head>
-
-<body>
+@section('content')
 <div class="container mt-2">
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit Ticket</h2>
+                <h2>Editar Ticket</h2>
             </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ route('tickets.index') }}" enctype="multipart/form-data">
-                    Back</a>
+                    Torna</a>
             </div>
         </div>
     </div>
@@ -42,7 +35,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Descripcion ticket:</strong>
-                    <input type="email" name="descripcion" class="form-control" placeholder="Descripcion ticket"
+                    <input type="text" name="descripcion" class="form-control" placeholder="Descripcion ticket"
                            value="{{ $ticket->descripcion }}">
                     @error('descripcion')
                     <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
@@ -52,17 +45,15 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Persona que lo crea:</strong>
-                    <input type="text" name="address" value="{{ $ticket->nombre_persona }}" class="form-control"
+                    <input type="text" name="nombre_persona" value="{{ $ticket->nombre_persona }}" class="form-control"
                            placeholder="Persona">
                     @error('person')
                     <div class="alert alert-danger mt-1 mb-1">{{ $message }}</div>
                     @enderror
                 </div>
             </div>
-            <button type="submit" class="btn btn-primary ml-3">Submit</button>
+            <button type="submit" class="btn btn-primary ml-3">Actualitzar</button>
         </div>
     </form>
 </div>
-</body>
-
-</html>
+@endsection
